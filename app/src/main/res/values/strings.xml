@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clint project</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="log_in">Log in</string>
+    <string name="verify_your_number">Verify your number</string>
+    <string name="verification">Verification</string>
+</resources>
