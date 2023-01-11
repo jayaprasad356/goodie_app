@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "800229663175",
+    "firebase_url": "https://vivd-c9ae7-default-rtdb.firebaseio.com",
+    "project_id": "vivd-c9ae7",
+    "storage_bucket": "vivd-c9ae7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800229663175:android:c93a5e28ec14b4509e39e2",
+        "android_client_info": {
+          "package_name": "com.example.clintproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800229663175-3tlvng22suv3t8fi00d6isd2d01skdqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clintproject",
+            "certificate_hash": "c691100c51e00d26da9e919f319bb0eb697aed32"
+          }
+        },
+        {
+          "client_id": "800229663175-r78lduostunp8p7ofud7u89s9h60tn8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAn_975fdCOmnOr1oU31tuP7P1yLNSHMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800229663175-r78lduostunp8p7ofud7u89s9h60tn8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800229663175:android:0fbe75a9bfa4711b9e39e2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800229663175-2lp40dsask5fmb3imaonnlfosi4055gf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "c691100c51e00d26da9e919f319bb0eb697aed32"
+          }
+        },
+        {
+          "client_id": "800229663175-r78lduostunp8p7ofud7u89s9h60tn8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAn_975fdCOmnOr1oU31tuP7P1yLNSHMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800229663175-r78lduostunp8p7ofud7u89s9h60tn8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800229663175:android:ee46259d9ed862e49e39e2",
+        "android_client_info": {
+          "package_name": "com.example.vivd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800229663175-tfgv8onejsui9rktpfbojgoqrldbre19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vivd",
+            "certificate_hash": "c691100c51e00d26da9e919f319bb0eb697aed32"
+          }
+        },
+        {
+          "client_id": "800229663175-r78lduostunp8p7ofud7u89s9h60tn8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAn_975fdCOmnOr1oU31tuP7P1yLNSHMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800229663175-r78lduostunp8p7ofud7u89s9h60tn8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

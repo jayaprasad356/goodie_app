@@ -9,14 +9,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+
         android:layout_height="400dp"
         android:background="@drawable/shap">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/newdatascience" />
     </LinearLayout>
 
@@ -56,35 +57,21 @@
         android:weightSum="100">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="25"
-            android:background="#f6f6f6"
-
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                android:src="@drawable/india_logo" />
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-
-                android:text="+91"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="75"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
             android:background="#f6f6f6">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:text="+91"
+android:visibility="gone"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
 
             <EditText
                 android:id="@+id/mobile_number"
@@ -96,6 +83,8 @@
                 android:inputType="phone"
                 android:maxLength="10"
                 android:padding="12dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
                 android:textColor="#000000"
                 android:textColorHint="#c7c7c8"
                 android:textSize="16sp" />

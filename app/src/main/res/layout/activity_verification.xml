@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VerificationActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:background="@drawable/shap">
+        android:background="@drawable/shap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:id="@+id/backbtnn"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -18,41 +32,51 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/verification" />
     </LinearLayout>
-    <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="450dp"
-    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:fontFamily="@font/port_lligat_sans"
-        android:text="@string/verification"
-        android:textColor="@color/headlineblue"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.08">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="18dp"
-        android:fontFamily="@font/port_lligat_sans"
-        android:text="@string/verify_your_number"
-        android:textColor="@color/headlineblue"
-        android:textSize="14sp" />
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/port_lligat_sans"
+            android:text="@string/verification"
+            android:textColor="@color/headlineblue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/port_lligat_sans"
+            android:text="@string/verify_your_number"
+            android:textColor="@color/headlineblue"
+            android:textSize="14sp" />
+    </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+
+
+        android:layout_marginTop="126dp"
+        android:layout_marginBottom="100dp"
         android:foregroundGravity="center"
-        android:layout_marginTop="200sp"
+        app:layout_constraintBottom_toTopOf="@+id/verify"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="0dp">
 
-
-        >
         <EditText
             android:id="@+id/otpEditText1"
             android:layout_width="45dp"
@@ -61,8 +85,8 @@
             android:background="#DCDCDC"
             android:ems="10"
             android:gravity="center"
-            android:inputType="number"
             android:hint="0"
+            android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
@@ -71,13 +95,13 @@
             android:id="@+id/otpEditText2"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
             android:background="#DCDCDC"
             android:ems="10"
             android:gravity="center"
-            android:layout_marginLeft="4dp"
-            android:maxLength="1"
             android:hint="0"
             android:inputType="number"
+            android:maxLength="1"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toStartOf="@+id/otpEditText3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -88,12 +112,12 @@
             android:id="@+id/otpEditText3"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
             android:background="#DCDCDC"
             android:ems="10"
-            android:inputType="number"
             android:gravity="center"
             android:hint="0"
-            android:layout_marginLeft="4dp"
+            android:inputType="number"
             android:maxLength="1"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toStartOf="@+id/otpEditText4"
@@ -102,16 +126,16 @@
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
         <EditText
-            android:layout_marginLeft="4dp"
-            android:maxLength="1"
             android:id="@+id/otpEditText4"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
             android:background="#DCDCDC"
             android:ems="10"
-            android:inputType="number"
             android:gravity="center"
             android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toStartOf="@+id/otpEditText5"
             app:layout_constraintHorizontal_bias="0.5"
@@ -120,16 +144,16 @@
 
 
         <EditText
-            android:layout_marginLeft="4dp"
-            android:maxLength="1"
             android:id="@+id/otpEditText5"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
             android:background="#DCDCDC"
             android:ems="10"
-            android:inputType="number"
             android:gravity="center"
             android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toStartOf="@+id/otpEditText6"
             app:layout_constraintHorizontal_bias="0.5"
@@ -139,17 +163,17 @@
 
 
         <EditText
-            android:layout_marginLeft="4dp"
-            android:maxLength="1"
             android:id="@+id/otpEditText6"
             android:layout_width="45dp"
             android:layout_height="45dp"
-
+            android:layout_marginLeft="4dp"
             android:background="#DCDCDC"
+
             android:ems="10"
-            android:inputType="number"
             android:gravity="center"
             android:hint="0"
+            android:inputType="number"
+            android:maxLength="1"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/otpEditText5"
@@ -173,26 +197,31 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/resend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="610dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="resend"
-        android:id="@+id/resend"
         android:clickable="true"
         android:focusable="true"
-        android:textColor="@color/buttoncolor" />
+        android:fontFamily="@font/poppins_semibold"
+        android:text="resend"
+        android:textColor="@color/buttoncolor"
+        app:layout_constraintBottom_toTopOf="@+id/verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:layout_marginHorizontal="24sp"
-        android:layout_marginTop="648dp"
         android:backgroundTint="@color/buttoncolor"
-        android:id="@+id/verify"
         android:fontFamily="@font/poppins_semibold"
         android:text="verify"
         android:textAllCaps="false"
         android:textSize="14dp"
-        app:cornerRadius="5dp" />
-</FrameLayout>
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

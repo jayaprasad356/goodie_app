@@ -7,5 +7,5 @@
   <path
       android:pathData="M0,0H428V391.42L0,446V0Z"
 
-      android:fillColor="#015CEB"/>
+      android:fillColor="@color/buttoncolor"/>
 </vector>

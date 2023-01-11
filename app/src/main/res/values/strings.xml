@@ -4,4 +4,11 @@
     <string name="log_in">Log in</string>
     <string name="verify_your_number">Verify your number</string>
     <string name="verification">Verification</string>
+    <string name="pick_up_location">Pick up location</string>
+    <string name="your_location">Your location</string>
+    <string name="drop_location">drop location</string>
+    <string name="destination">Destination</string>
+    <string name="please_select_date_amp_time"><![CDATA[Please Select Date & Time]]></string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
 </resources>
